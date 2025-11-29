@@ -53,6 +53,7 @@ e. train.php – Halaman Latihan
       - Memanggil $pokemon->train(...)
       - ssion Pokémon diperbarui
       - Riwayat latihan disimpan pada $_SESSION['history']
+      - meberikan rincian stat yang berubah dan skill spesial
       - Redirect ke index.php agar perubahan langsung terlihat
 f. history.php – Riwayat Latihan
    Menampilkan daftar seluruh sesi latihan:
