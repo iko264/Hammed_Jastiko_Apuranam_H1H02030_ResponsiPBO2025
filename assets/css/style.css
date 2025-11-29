@@ -1,0 +1,28 @@
+body {
+    background: #f0f4f8;
+    font-family: Inter, Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+.container {
+    max-width: 920px;
+    margin: 30px auto;
+    background: #fff;
+    border-radius: 12px;
+    padding: 22px;
+    box-shadow: 0 6px 18px rgba(33, 47, 60, 0.08);
+}
+.header {
+    display:flex;
+    align-items:center;
+    gap:16px;
+}
+.pokemon-img { width:140px; height:140px; object-fit:contain; border-radius:8px; background:#f8fafc; padding:10px; }
+h1 { margin:0; font-size:22px; }
+.card { margin-top:18px; padding:14px; border-radius:8px; background:#fbfdff; border:1px solid #eef3f8; }
+.row { display:flex; gap:14px; align-items:center; }
+.table { width:100%; border-collapse:collapse; margin-top:12px; }
+.table th, .table td { text-align:left; padding:10px; border-bottom:1px solid #f1f5f9; }
+.btn { display:inline-block; padding:10px 14px; background:#2d9cdb; color:#fff; border-radius:8px; text-decoration:none; }
+.form-row { margin-top:12px; }
+.input, select { padding:8px 10px; border-radius:6px; border:1px solid #dbe7f0; }
