@@ -64,4 +64,4 @@ f. history.php – Riwayat Latihan
    - waktu latihan
 
 ## demo sigkat
-![Demo](pokecare.gif)
+![Demo](Pokecare.gif)
