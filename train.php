@@ -2,7 +2,6 @@
 session_start();
 require_once __DIR__ . '/classes/Pidgey.php';
 
-// ensure pokemon exists
 if (!isset($_SESSION['pokemon'])) {
     $_SESSION['pokemon'] = serialize(new Pidgey());
 }
@@ -17,10 +16,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $intensity = isset($_POST['intensity']) ? (int)$_POST['intensity'] : 10;
     list($before, $after) = $pokemon->train($type, $intensity);
 
-    // save back to session
     $_SESSION['pokemon'] = serialize($pokemon);
 
-    // save history in session (simple)
+
     if (!isset($_SESSION['history'])) $_SESSION['history'] = [];
     $_SESSION['history'][] = [
         'time' => date('Y-m-d H:i:s'),
@@ -30,7 +28,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         'after' => $after
     ];
 
-    // redirect to index.php after training
     header('Location: index.php');
     exit();
 }
