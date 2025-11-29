@@ -62,3 +62,5 @@ f. history.php – Riwayat Latihan
    - HP sebelum → sesudah
    - waktu latihan
 
+## demo sigkat
+![Demo](Pokecare.gif)
